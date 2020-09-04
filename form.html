@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title>TUGAS SESI 3</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+    <!-- Header -->
+    <div class='header'>
+        <div class='headerlogo'>
+            <h1>Raica Bakery</h1>
+        </div>
+
+        <div class='navbar'>
+            <ul>
+                
+                <li><a href='./index.html'>Beranda</a></li>
+                <li class='active'><a href='./produk.html'>Produk</a></li>
+                <li><a href='./galeri.html'>Galeri</a></li>
+                <li><a href='./blog.html'>Blog</a></li>
+                <li><a href='./formportofolio.html'>Profile</a></li>
+                <li><a href='./kontak.html'>Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class='mainheader'>
+    <h1 style="background:orchid;">Pemesanan Makanan</h1>
+    <center>
+    <p><b>Ini adalah form untuk memesan makanan</b><p>
+    </center>
+        <form action='welcome.html' method="POST">
+        <fieldset>
+        <legend class="formheader">Form Raica Bakery</legend>
+        <p>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="fullName" type="text" required>
+        </p>
+        <p>
+            <label for="alamat">Alamat</label>
+            <input id="alamat" name="alamat" type="textarea" rows="5" required>
+        </p>
+        <p>
+            <label for="nohp">NO.Hp</label>
+            <input id="nohp" name="nohp" type="text" required>
+        </p>
+        <p>
+            <label for="pesanan">Pesanan</label>
+            <input type="text" name="pesanan" list="pesanan" required>
+            <datalist id="pesanan">
+                <select name="pilihroti">
+                    <option value="coklat"> Roti Coklat</option>
+                    <option value="keju"> Roti Keju</option>
+                    <option value="pisang"> Roti Pisang</option>
+                    <option value="coklat-keju"> Roti Coklat Keju</option>
+                    <option value="oreo"> Roti Oreo</option>
+                </select>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="toping" required>Toping Tambahan</label>
+            <input id="susu-radio" type="radio" name="toping" value="susu">
+            <label for="susu-radio">Susu</label>
+            <input id="mozzarella-radio" type="radio" name="toping" value="mozzarella">
+            <label for="mozzarella-radio">Mozzarella</label>
+        </p>
+        <p>
+            <label for="jumlah">Jumlah</label>
+            <input type="text" name="jumlah" list="jumlah" required>
+            <datalist id="jumlah">
+                <select name="jumlah">
+                    <option value="1"> 1</option>
+                    <option value="2"> 2</option>
+                    <option value="3"> 3</option>
+                    <option value="4"> 4</option>
+                    <option value="5"> 5</option>
+                </select>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="pengantaran">Pengantaran</label>
+            <input id="cod-checkbox" type="checkbox" name="pengantaran" value="cod">
+            <label for="cod-checkbox">Cash On Delivery</label>
+            <input id="transfer-checkbox" type="checkbox" name="pengantaran" value="transfer">
+            <label for="transfer-checkbox">Transfer</label>
+        </p>
+    </fieldset>
+    <button class= "tombolsubmitform">Submit
+            <a href= './welcome.html'></a>
+        </button>
+    </form>
+</div>
+<div class='footer'>
+    <small>Copyright 2020 - <a href=''>Nerisa Arviana</a></small>
+</div>
+</html>
